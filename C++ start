@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+struct Player {
+	int ID;
+	float health;
+	int level;
+	int experience;
+};
+
+
+void pInfo() {
+	cout << "Hello new player!";
+}
+
+int main()
+{
+	Player pl{10, 100, 1, 0};
+	cout << pl.ID << endl;
+	cout << pl.health << endl;
+	cout << pl.level << endl;
+	cout << pl.experience << endl;
+	
+	pInfo();
+	return 0;
+}
